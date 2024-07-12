@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div>
       <h1>Contact Us</h1>
-      <p>Get in touch with us for more information or collaboration opportunities...</p>
+      <p>This is contact us page</p>
     </div>
   );
 }

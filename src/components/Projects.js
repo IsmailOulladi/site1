@@ -4,7 +4,7 @@ function Projects() {
   return (
     <div>
       <h1>Our Projects</h1>
-      <p>Discover our various projects focused on science and sustainable development...</p>
+      <p>This is projects page</p>
     </div>
   );
 }
