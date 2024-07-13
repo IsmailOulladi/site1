@@ -5,7 +5,7 @@ function Contact() {
     <div>
       <h1>Contact Us</h1>
       <p>This is contact us page</p>
-          <button>Learn More</button>
+          <button  className="btn-primary" >Learn More</button>
     </div>
 
   );
