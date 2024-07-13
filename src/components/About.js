@@ -1,12 +1,14 @@
 import React from 'react';
 
-function About() {
+const About = () => {
   return (
-    <div>
-      <h1>About Us</h1>
-      <p>This is about us page</p>
+    <div className="container">
+      <h2>About Us</h2>
+      <p>
+        This is About Us page 
+      </p>
     </div>
   );
-}
+};
 
 export default About;

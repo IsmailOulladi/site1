@@ -1,58 +1,164 @@
-/* src/App.css */
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
 }
 
-nav {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
+a {
+  color: #3498db;
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+a:hover {
+  color: #2980b9;
 }
 
+/* Header Styles */
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  margin: 0 15px;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+/* Main Content Styles */
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 20px auto;
-  background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
-.btn-primary {
+.container h2 {
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Button Styles */
+.button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background: #3498db;
   color: #fff;
   border: none;
-  border-radius: 4px;
-  font-size: 1rem;
+  border-radius: 5px;
+  font-size: 1em;
   cursor: pointer;
-  text-decoration: none; 
+  transition: background 0.3s, transform 0.3s;
 }
 
-.btn-primary:hover {
-  background-color: #0056b3;
+.button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2em;
+  }
+
+  nav {
+      margin: 10px 0;
+  }
+
+  nav a {
+      font-size: 1em;
+  }
+
+  .container {
+      padding: 15px;
+  }
+}
+
+/* Hero Section Styles */
+.hero {
+  /*background: url('path/to/your/image.jpg') no-repeat center center/cover;*/
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 20px 0;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.card-content p {
+  margin-bottom: 20px;
 }

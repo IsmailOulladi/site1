@@ -1,13 +1,20 @@
-// components/Home.js
 import React from 'react';
 
-function Home() {
+const Home = () => {
   return (
     <div>
-      <h1>Welcome my website</h1>
-      <p>This is Home Page</p>
+      <div className="hero">
+        <h1>Welcome to my website</h1>
+      </div>
+      <div className="container">
+        <h2>HomePage</h2>
+        <p>
+          This is my HomePage
+        </p>
+        <a href="#" className="button">Learn More</a>
+      </div>
     </div>
   );
-}
+};
 
 export default Home;
